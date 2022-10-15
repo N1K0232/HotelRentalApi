@@ -5,9 +5,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-  </ItemGroup>
+		<ItemGroup>
+				<PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.5.1" />
+				<PackageReference Include="MicroElements.Swashbuckle.FluentValidation" Version="5.7.0" />
+				<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+				<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+				<PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+				<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		</ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\HotelRentalApi.Abstractions\HotelRentalApi.Abstractions.csproj" />
