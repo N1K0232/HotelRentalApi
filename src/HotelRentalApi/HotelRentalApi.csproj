@@ -1,13 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HotelRentalApi.Abstractions\HotelRentalApi.Abstractions.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Authorization\HotelRentalApi.Authorization.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.BusinessLayer\HotelRentalApi.BusinessLayer.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Logging\HotelRentalApi.Logging.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Security\HotelRentalApi.Security.csproj" />
   </ItemGroup>
 
 </Project>

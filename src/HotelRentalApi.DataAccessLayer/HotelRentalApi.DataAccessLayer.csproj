@@ -1,9 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
+
+		<ItemGroup>
+				<PackageReference Include="Dapper" Version="2.0.123" />
+				<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+				<PackageReference Include="TinyHelpers" Version="1.5.37" />
+		</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HotelRentalApi.Authentication\HotelRentalApi.Authentication.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Contracts\HotelRentalApi.Contracts.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Database\HotelRentalApi.Database.sqlproj" />
+    <ProjectReference Include="..\HotelRentalApi.Security\HotelRentalApi.Security.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Shared\HotelRentalApi.Shared.csproj" />
+  </ItemGroup>
 
 </Project>

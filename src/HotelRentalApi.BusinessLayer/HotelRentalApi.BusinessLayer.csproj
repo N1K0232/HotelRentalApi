@@ -1,9 +1,26 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
+
+		<ItemGroup>
+				<PackageReference Include="AutoMapper" Version="12.0.0" />
+				<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+				<PackageReference Include="FluentValidation" Version="11.2.2" />
+				<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+				<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
+				<PackageReference Include="OperationResultTools" Version="1.0.8" />
+				<PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.20" />
+		</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HotelRentalApi.Authentication\HotelRentalApi.Authentication.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.DataAccessLayer\HotelRentalApi.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Security\HotelRentalApi.Security.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.Shared\HotelRentalApi.Shared.csproj" />
+    <ProjectReference Include="..\HotelRentalApi.StorageProvider\HotelRentalApi.StorageProvider.csproj" />
+  </ItemGroup>
 
 </Project>
